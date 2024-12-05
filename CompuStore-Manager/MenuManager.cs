@@ -150,17 +150,35 @@ namespace CompuStoreManager
             Console.ReadLine();
         }
 
+        private void VerCatalogoSinPausa()
+        {
+            Console.WriteLine("Catálogo de Productos:");
+            foreach (var producto in sistema.Productos)
+            {
+                Console.WriteLine($"ID: {producto.ID}, Nombre: {producto.Nombre}, Precio: {producto.Precio:C}, Stock: {producto.Stock}");
+                Console.WriteLine($"Descripción: {producto.Descripción}");
+                Console.WriteLine("-----------------------------------");
+            }
+        }
+
         private void ComprarProducto()
         {
             carrito.VaciarCarrito();
             while (true)
             {
-                VerCatalogo();
+                Console.Clear();
+                Console.WriteLine("Agregar productos al carrito");
+                VerCatalogoSinPausa();
+
+                Console.WriteLine();
+                MostrarCarrito();
+
                 Console.Write("Ingrese el ID del producto que desea agregar al carrito (0 para finalizar): ");
                 int idProducto;
                 if (!int.TryParse(Console.ReadLine(), out idProducto))
                 {
                     Console.WriteLine("Entrada no válida. Intente nuevamente.");
+                    Console.ReadLine();
                     continue;
                 }
 
@@ -180,10 +198,15 @@ namespace CompuStoreManager
                 {
                     Console.WriteLine("Producto no encontrado o sin stock disponible.");
                 }
+
+                Console.WriteLine("Presione Enter para continuar.");
+                Console.ReadLine();
             }
 
             if (carrito.Productos.Count > 0)
             {
+                Console.WriteLine("Resumen de su carrito:");
+                MostrarCarrito();
                 Console.WriteLine($"Total a pagar: {carrito.CalcularTotal():C}");
                 Console.Write("¿Desea confirmar la compra? (S/N): ");
                 string confirmar = Console.ReadLine().ToUpper();
@@ -210,6 +233,24 @@ namespace CompuStoreManager
             }
             Console.WriteLine("Presione Enter para continuar.");
             Console.ReadLine();
+        }
+
+        private void MostrarCarrito()
+        {
+            if (carrito.Productos.Count > 0)
+            {
+                Console.WriteLine("Productos en el carrito:");
+                foreach (var producto in carrito.Productos)
+                {
+                    Console.WriteLine($"- {producto.Nombre} ({producto.Precio:C})");
+                }
+                Console.WriteLine("-----------------------------------");
+                Console.WriteLine($"Total parcial: {carrito.CalcularTotal():C}");
+            }
+            else
+            {
+                Console.WriteLine("El carrito está vacío.");
+            }
         }
 
         private void VerMisCompras()
