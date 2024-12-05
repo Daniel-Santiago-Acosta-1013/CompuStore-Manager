@@ -1,0 +1,14 @@
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\bin\Debug\net8.0\CompuStore-Manager.exe
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\bin\Debug\net8.0\CompuStore-Manager.deps.json
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\bin\Debug\net8.0\CompuStore-Manager.runtimeconfig.json
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\bin\Debug\net8.0\CompuStore-Manager.dll
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\bin\Debug\net8.0\CompuStore-Manager.pdb
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\CompuStore-Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\CompuStore-Manager.AssemblyInfoInputs.cache
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\CompuStore-Manager.AssemblyInfo.cs
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\CompuStore-Manager.csproj.CoreCompileInputs.cache
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\CompuStore-Manager.dll
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\refint\CompuStore-Manager.dll
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\CompuStore-Manager.pdb
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\CompuStore-Manager.genruntimeconfig.cache
+C:\Users\santi\Desktop\CompuStore-Manager\CompuStore-Manager\obj\Debug\net8.0\ref\CompuStore-Manager.dll
